@@ -1,0 +1,16 @@
+{% extends "core/base.html" %}
+
+{% block title %} Med Agenda | Confirmar Exclusão {% endblock %}
+
+{% block content %}
+<main class="container mt-5">
+    <h1 class="fs-3 fw-semibold mb-4 text-danger">Cancelar Consulta</h1>
+    <p>Tem certeza de que deseja cancelar a consulta de <strong> {{object.paciente}}</strong> agendada com <strong>{{ object.medico }} </strong>na data <strong>{{object.data|date:'Y-m-d'}}</strong> e no horário <strong>{{object.horario}}</strong>?</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Sim</button>
+        <a href="{% url 'criar_agendamento' %}" class="btn btn-secondary">Não</a>
+    </form>
+</main>
+{% endblock %}

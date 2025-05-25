@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ambientes virtuais
+venv/
+env/
+ENV/
+*.env
+*.venv
+
+# Arquivo de variáveis de ambiente
+.env
+
+# Banco de dados SQLite (não necessário se usar apenas PostgreSQL)
+db.sqlite3
+
+# Arquivos de log
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Arquivos compilados
+*.pyc
+
+# Arquivos de migração (opcional ignorar)
+# */migrations/
+# */migrations/*.py
+# */migrations/*.pyc
+
+# Arquivos de cache
+**/__pycache__/
+
+# Media files (uploads de usuários, se for gerado localmente)
+media/
+
+# Backup
+*.bak
+*.swp
+*.swo
