@@ -11,7 +11,7 @@ def home(request):
 
 class MedicoCreateView(CreateView):
     model = Medico
-    template_name = "core/pages/cadastro_medico.html"
+    template_name = "core/pages/medico/cadastro_medico.html"
     fields = ["nome", "especialidade"]
     
     def form_valid(self, form):
